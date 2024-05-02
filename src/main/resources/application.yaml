@@ -1,0 +1,21 @@
+
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-1
+    credentials:
+      access-key: 7HV919201281820kdoo
+      secret-key: 98939213HOIWOK93213LLASDO23/
+    queue:
+      uri: http://sqs.us-east-1.localhost.localstack.cloud:4566
+      name: sqsHelloWorld
+    end-point:
+      uri: http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/sqsHelloWorld
+server:
+  port: 8094
+
+logging:
+  level:
+    'org.apache.http.headers': debug
